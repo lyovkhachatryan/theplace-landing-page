@@ -1,6 +1,9 @@
 <?php
 
 	function sendMail($name, $email, $comment) {
+		$email_to = 'andranik@hovesyan.pro';
+		$subject = 'The Place Contact';
+			
 		$result = [];
 		$error = false;
 		if (strlen($name) <= 3) {
@@ -23,7 +26,7 @@
 			$headers = 'From: no-reply@theplace.am' . "\r\n";
 			$headers.= 'Reply-To: ' . $email . "\r\n" ;
 			
-			$sent = mail($to, $subject, $message, $headers);
+			$sent = mail($email_to, $subject, $message, $headers);
 
 			if ($sent) {
 				$result['message'] = 'Thank you!';
@@ -41,8 +44,7 @@
 	
 
 	
-	$email_to = 'andranik@hovesyan.pro';
-	$subject = 'The Place Contact';
+
 
 	if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['comment'])) {
 
