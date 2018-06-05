@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>The Place</title>
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/script.js"></script>
@@ -15,15 +18,15 @@
   <div class="navbar navbar-light text-white">
     <div class="container">
       <div class="row w-100">
-        <div class="col col-auto">
+        <div class="col-12 col-lg-auto">
           <p style="line-height: 60px;">Aygektsi str. 103/1</p>
         </div>
-        <div class="col text-center">
+        <div class="col-lg text-center">
           <h1>The Place</h1>
         </div>
         <div class="col col-auto text-right">
-          <a href="#"><i class="fab fa-facebook-f f mr-2 "></i></a>
-          <a href="#"><i class="fab fa-instagram f "></i></a>
+          <a href="https://www.facebook.com/ThePlaceYerevan/" target="blank"><img src="image/fb.png" class="socialImg"></a>
+          <a href="https://www.instagram.com/theplace__/?hl=ru" target="blank"><img src="image/insta.png" style="padding: 4px;" class="socialImg"></a>
         </div>
       </div>
     </div>
@@ -33,11 +36,11 @@
       <div class="row">
         <div class="col-12 col-md-auto">
           <div class="img">
-            <img style="height: 600px; width: 445px;" src="image/place.jpeg">
+            <img style="height: auto; max-width: 100%; width: 445px;" src="image/plac.jpg">
           </div>
         </div>
         <div class="col-1"></div>
-        <div class="col-12 col-md">
+        <div class="col-12 col-lg">
           <nav class="nav nav_links mb-5 w-100">
             <a class="nav-link animsition-link active" data-content="about" href="#">About Us</a>
             <a class="nav-link animsition-link" data-content="contact" href="#">Contact Us</a>
@@ -62,6 +65,12 @@
               </p>
               <p>
                 Free snacks, drinks, WI-FI Internet, board games, journals and books, comfortable environment, new friends and enjoyable time - everything is free. The only thing you need to pay is TIME.
+                <ul class="features">
+                  <li>1 hour  - 700 AMD
+                  <li>2 hours - 1200 AMD
+                  <li>3 hours - 1400 AMD
+                  
+                </ul>
               </p>
               <p>
                 We welcome anyone regardless of age and become the place where any crazy and creative ideas come into reality.
@@ -70,7 +79,7 @@
             <div id="contact" class="content inactive">
               <div class="row">
                 <div class="col-12">
-                  <p><i class="fas fa-phone"></i>Phone: +374 98 250-596</p>
+                  <p><i class="fas fa-phone"></i>Phone: +374 91 556-552</p>
                 </div>
                 <div class="col-12">
                   <p><i class="fas fa-at"></i>E-mail: info@theplace.am</p>
@@ -91,7 +100,7 @@
                 <div class="col-12">
                   <div class="alert" style="display: none;" id="contactFormAlert" role="alert"> ?>
                   </div>                    
-                <form id="contactForm" method="post" action="contact.php">
+                <form id="contactForm" method="POST" action="contact.php">
                     <fieldset class="form-group">
                       <input class="form-control" placeholder="Name" name="name">
                     </fieldset>

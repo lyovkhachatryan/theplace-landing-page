@@ -3,7 +3,7 @@
 	function sendMail($name, $email, $comment) {
 		$email_to = 'andranik@hovesyan.pro';
 		$subject = 'The Place Contact';
-			
+
 		$result = [];
 		$error = false;
 		if (strlen($name) <= 3) {
@@ -20,8 +20,8 @@
 		} else {
 
 			$message = 'Name: ' . $name . "\r\n";
-			$message.=  'Email: ' . $email . "\r\n";
-			$message.=  'Message: ' . $comment;
+			$message.= 'Email: ' . $email . "\r\n";
+			$message.= 'Message: ' . $comment;
 
 			$headers = 'From: no-reply@theplace.am' . "\r\n";
 			$headers.= 'Reply-To: ' . $email . "\r\n" ;

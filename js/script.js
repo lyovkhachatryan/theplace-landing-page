@@ -12,7 +12,7 @@ $(function () {
     });
 
     $(document).on('submit','#contactForm',function(e) {
-      e.preventDefault();    
+      e.preventDefault();
       var data = $(this).serialize();
       $.post('/contact.php', data, function(res) {
         var data = JSON.parse(res);
